@@ -25,11 +25,15 @@ let underlineButton = (elem) => {
     // outputVal.classList.toggle('underline')
     elem.classList.toggle('active');
     let outputVal = document.getElementById('output-text');
-    if(outputVal.classList.contains('underline')){
-        outputVal.classList.remove('underline')
-    }else{
-        outputVal.classList.add('underline')
-    } 
+
+    // if(outputVal.classList.contains('underline')){
+    //     outputVal.classList.remove('underline')
+    // }else{
+    //     outputVal.classList.add('underline')
+    // } 
+    outputVal.classList.contains('underline') ? 
+    outputVal.classList.remove('underline') : 
+    outputVal.classList.add('underline');
 }
 
 /**
@@ -45,8 +49,12 @@ let alignText = (elem, activeType) => {
     outputVal.style.textAlign = activeType;
     let buttonsList = document.getElementsByClassName('btn-align')
     
-    for(let i = 0; i < buttonsList.length; i++){
-            buttonsList[i].classList.remove('active')
+    // for(let i = 0; i < buttonsList.length; i++){
+    //     buttonsList[i].classList.remove('active')
+    // }
+   
+    for (let buttonItem of buttonsList){
+        buttonItem.classList.remove('active')
     }
     elem.classList.add('active')
     
