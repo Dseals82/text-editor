@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body> 
+    <h1 class="header">TextEditor</h1> 
+<main class="main-container">
+     
+    <div class="button-container">
+        <button onclick="boldButton(this)" class="btn" id="bold" >Bold</button>
+        <button onclick="italicButton(this)" class="btn" id="italic" >Italic</button>
+        <button onclick="underlineButton(this)" class="btn" id="underline" >Underline</button>
+        <button onclick="alignText(this, 'left')" class="btn-align" id="left" ><i class="fas fa-align-left"></i></button>
+        <button onclick="alignText(this, 'center')" class="btn-align" id="center" ><i class="fas fa-align-center"></i></button>
+        <button onclick="alignText(this, 'right')" class="btn-align" id="right" ><i class="fas fa-align-right"></i></button>
+    </div>
+    <hr class="horizontal-rule">
+    <div class="inputs-container">
+        <div class="input-container">
+            <label for="">Input</label>
+            <textarea oninput="getInput(this)" name="" id="input-text" cols="30" rows="10"></textarea>
+        </div>
+        <div class="output-container">
+            <label for="">Output</label>
+            <textarea disabled name="" id="output-text" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------script------------ -->
+<script src="script.js"></script>
+</body>
+</html>

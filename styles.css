@@ -1,0 +1,115 @@
+/* =====App Styling======= */
+
+*,body,html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.header {
+    text-align: center;
+    margin: 2rem;
+    font-size: 3rem;
+    color: #1f3da5;
+    font-weight: 600;
+}
+
+.main-container {
+    /* width: 100%; */
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-rule {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ececec;
+    
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+}
+
+button {
+    padding: 1rem;
+    margin: 10px;
+    background-color: #ececec;
+    border:none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color: #dedede;
+    cursor: pointer;
+}
+
+.inputs-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input-container, .output-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+label {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+
+    border-color: #dedede;
+    overflow: auto;
+    outline-color: #1f3da5;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* =====active style for buttons======= */
+
+.active {
+    background-color: #dedede;
+}
+
+/* =====Button Text Styles======= */
+
+.bold {
+    font-weight: bolder;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* =====button align styles======= */
+
